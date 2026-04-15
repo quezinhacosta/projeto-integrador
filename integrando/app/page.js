@@ -8,8 +8,8 @@ export default function Home() {
       <header className="header">
         <div className="logo">Viva Mais</div>
         <nav className="nav">
-          <a>Home</a>
-          <a>Quem somos</a>
+          <a href="aboutText">Home</a>
+          <a href="simulation">Quem somos</a>
           <a>Simulação</a>
           <a>Serviços</a>
           <a>Contato</a>
