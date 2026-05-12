@@ -124,12 +124,11 @@ export default function Home() {
           </p>
 
           <button className="primaryBtn">
-            Simular Agora
+            Simular agora
           </button>
         </div>
       </section>
 
-      {/* SERVIÇOS */}
       <section className="services" id="services">
 
         <span className="sectionTag">
@@ -141,28 +140,13 @@ export default function Home() {
         <div className="cards">
 
           <Link href="/ParaVoce" className="card">
-            <Image
-              src="/vida.png"
-              alt="Seguro Pessoal"
-              width={90}
-              height={90}
-            />
-
             <h3>Para Você</h3>
-
             <p>
               Proteção pessoal, familiar e financeira.
             </p>
           </Link>
 
           <Link href="/ParaCasa" className="card">
-            <Image
-              src="/casa.png"
-              alt="Seguro Residencial"
-              width={90}
-              height={90}
-            />
-
             <h3>Para sua Casa</h3>
 
             <p>
@@ -171,15 +155,7 @@ export default function Home() {
           </Link>
 
           <Link href="/ParaEmpresa" className="card">
-            <Image
-              src="/empresa.png"
-              alt="Seguro Empresarial"
-              width={90}
-              height={90}
-            />
-
             <h3>Para Empresas</h3>
-
             <p>
               Soluções empresariais completas e seguras.
             </p>
