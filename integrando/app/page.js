@@ -20,9 +20,7 @@ export default function Home() {
           <a href="#contact">Contato</a>
         </nav>
 
-        <button className="headerButton">
-          Solicitar Cotação
-        </button>
+  
       </header>
 
       {/* HERO */}
@@ -49,13 +47,15 @@ export default function Home() {
           </p>
 
           <div className="heroButtons">
-            <button className="primaryBtn">
-              Fazer Simulação
-            </button>
-
-            <button className="secondaryBtn">
-              Conhecer Serviços
-            </button>
+            <a 
+              href="https://sites.google.com/view/chatbotvivamaisseguros/in%C3%ADcio" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="primaryBtn"
+              style={{ display: 'inline-block', textDecoration: 'none', textAlign: 'center' }}
+            >
+              Fale com nosso Bot
+            </a>
           </div>
         </div>
       </section>
