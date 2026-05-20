@@ -48,7 +48,7 @@ export default function Home() {
 
           <div className="heroButtons">
             <a 
-              href="https://sites.google.com/view/chatbotvivamaisseguros/in%C3%ADcio" 
+              href="https://vivamaisseguros.my.canva.site/dahkm4siix4" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="primaryBtn"
