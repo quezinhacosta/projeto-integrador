@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./page.css";
+import ThemeToggle from "../components/ThemeToggle";
 
 export default function ParaEmpresa() {
   return (
     <main className="enterpriseContainer">
 
       {/* HERO */}
-
       <section className="enterpriseHero">
 
         <Image
-          src="/empresa-banner.jpg"
+          src="/empresa-reuniao.png"
           alt="Seguro empresarial"
           fill
           priority
@@ -20,27 +20,15 @@ export default function ParaEmpresa() {
 
         <div className="heroOverlay"></div>
 
-        {/* HEADER */}
-
         <header className="heroHeader">
-
-          <Link href="/" className="backButton">
-            ← Voltar
-          </Link>
-
-          <div className="logo">
-            Viva Mais
+          <Link href="/" className="backButton">← Voltar</Link>
+          <div className="headerRightHero">
+            <ThemeToggle className="themeToggleHero" />
           </div>
-
         </header>
 
-        {/* HERO CONTENT */}
-
         <div className="heroContent">
-
-          <span className="tag">
-            SOLUÇÕES EMPRESARIAIS
-          </span>
+          <span className="tag">SOLUÇÕES EMPRESARIAIS</span>
 
           <h1>
             Proteção inteligente
@@ -52,79 +40,34 @@ export default function ParaEmpresa() {
             completas para proteger o crescimento do seu negócio.
           </p>
 
-          <button className="heroButton">
-            Solicitar Consultoria
-          </button>
-
+          <button className="heroButton">Solicitar Consultoria</button>
         </div>
 
       </section>
 
       {/* SERVIÇOS */}
-
       <section className="servicesSection">
 
         <div className="sectionTitle">
-
           <span>NOSSAS SOLUÇÕES</span>
-
-          <h2>
-            Seguros Empresariais
-          </h2>
-
+          <h2>Seguros Empresariais</h2>
         </div>
 
         <div className="servicesGrid">
 
           <div className="serviceCard">
-
-            <Image
-              src="/empresa.png"
-              alt="Seguro empresarial"
-              width={80}
-              height={80}
-            />
-
             <h3>Seguro Saúde Empresarial</h3>
-
-            <p>
-              Proteção para patrimônio, equipamentos e estrutura da empresa.
-            </p>
-
+            <p>Planos de saúde personalizados para colaboradores e equipes de todos os portes.</p>
           </div>
 
           <div className="serviceCard">
-
-            <Image
-              src="/funcionarios.png"
-              alt="Benefícios corporativos"
-              width={80}
-              height={80}
-            />
-
             <h3>Seguro Garantia</h3>
-
-            <p>
-              Planos personalizados para colaboradores e equipes.
-            </p>
-
+            <p>Proteção para contratos, licitações e obrigações contratuais da sua empresa.</p>
           </div>
 
           <div className="serviceCard">
-
-            <Image
-              src="/cyber.png"
-              alt="Segurança digital"
-              width={80}
-              height={80}
-            />
-
             <h3>Seguro de Frota</h3>
-
-            <p>
-              Cobertura contra riscos tecnológicos e ataques cibernéticos.
-            </p>
-
+            <p>Cobertura completa para veículos empresariais com assistência 24h em todo Brasil.</p>
           </div>
 
         </div>
@@ -132,29 +75,12 @@ export default function ParaEmpresa() {
       </section>
 
       {/* DIFERENCIAIS */}
-
       <section className="benefitsSection">
 
-        <div className="benefitsImage">
-
-          <Image
-            src="/empresa-reuniao.jpg"
-            alt="Equipe empresarial"
-            width={550}
-            height={550}
-          />
-
-        </div>
-
         <div className="benefitsText">
+          <span className="tag">POR QUE ESCOLHER A VIVA MAIS</span>
 
-          <span className="tag">
-            POR QUE ESCOLHER A VIVA MAIS
-          </span>
-
-          <h2>
-            Soluções estratégicas para empresas de todos os portes
-          </h2>
+          <h2>Soluções estratégicas para empresas de todos os portes</h2>
 
           <p>
             Atuamos com foco em prevenção, suporte rápido
@@ -166,59 +92,42 @@ export default function ParaEmpresa() {
             <li>✔ Atendimento corporativo especializado</li>
             <li>✔ Coberturas personalizadas</li>
             <li>✔ Gestão de riscos empresariais</li>
-            <li>✔ Suporte ágil e eficiente</li>
+            <li>✔ Suporte ágil e eficiente 24h</li>
           </ul>
-
         </div>
 
       </section>
 
       {/* ESTATÍSTICAS */}
-
       <section className="statsSection">
 
         <div className="statsCard">
-
-          <h3>+500</h3>
-          <p>Empresas Protegidas</p>
-
+          <h3>25k+</h3>
+          <p>Clientes na História</p>
         </div>
 
         <div className="statsCard">
-
-          <h3>98%</h3>
+          <h3>80%</h3>
           <p>Satisfação dos Clientes</p>
-
         </div>
 
         <div className="statsCard">
-
-          <h3>24h</h3>
-          <p>Suporte Especializado</p>
-
+          <h3>28</h3>
+          <p>Anos no Mercado</p>
         </div>
 
       </section>
 
       {/* CTA */}
-
       <section className="ctaSection">
 
         <div className="ctaBox">
-
-          <h2>
-            Fortaleça a segurança do seu negócio
-          </h2>
-
+          <h2>Fortaleça a segurança do seu negócio</h2>
           <p>
             Descubra soluções empresariais modernas e eficientes
             para sua empresa crescer com tranquilidade.
           </p>
-
-          <button>
-            Falar com Especialista
-          </button>
-
+          <button>Falar com Especialista</button>
         </div>
 
       </section>

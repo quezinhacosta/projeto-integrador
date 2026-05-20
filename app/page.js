@@ -1,33 +1,73 @@
 import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
+import ThemeToggle from "./components/ThemeToggle";
 
 export default function Home() {
   return (
     <main className="container">
 
-      {/* HEADER */}
+      {/* HEADER FIXO */}
       <header className="header">
-        <div className="logo">
-          <span>Viva Mais</span>
-        </div>
+        <div className="logo">Viva Mais</div>
 
         <nav className="nav">
-          <a href="#home">Home</a>
           <a href="#about">Quem Somos</a>
           <a href="#simulation">Simulação</a>
           <a href="#services">Serviços</a>
           <a href="#contact">Contato</a>
         </nav>
 
-  
+        <div className="headerRight">
+          <ThemeToggle />
+          <button className="headerButton">Solicitar Cotação</button>
+        </div>
       </header>
 
-      {/* HERO */}
+      {/* BANNER 1 — Para Empresas */}
       <section className="hero" id="home">
         <Image
-          src="/banner.jpg"
-          alt="Banner viva mais"
+          src="/empresa-reuniao.png"
+          alt="Soluções para empresas"
+          fill
+          priority
+          className="heroImg"
+        />
+
+        <div className="heroOverlay"></div>
+
+        <div className="heroContent">
+          <span className="sectionTag">SOLUÇÕES EMPRESARIAIS</span>
+
+          <h1>
+            Proteção estratégica
+            para o seu negócio crescer
+          </h1>
+
+          <p>
+            Seguros completos para empresas de todos os portes com
+            atendimento especializado e cobertura abrangente.
+          </p>
+
+          <div className="heroButtons">
+            <Link href="/ParaEmpresa" className="primaryBtn">
+              Conhecer Soluções
+            </Link>
+            <button className="secondaryBtn">Solicitar Cotação</button>
+          </div>
+        </div>
+
+        <div className="scrollIndicator">
+          <span>ROLAR</span>
+          <div className="scrollArrow"></div>
+        </div>
+      </section>
+
+      {/* BANNER 2 — Principal */}
+      <section className="hero" id="hero-principal">
+        <Image
+          src="/banner.png"
+          alt="Viva Mais Seguros"
           fill
           priority
           className="heroImg"
@@ -43,19 +83,12 @@ export default function Home() {
 
           <p>
             Soluções completas em seguros com atendimento humanizado,
-            rápido e confiável.
+            rápido e confiável. 28 anos cuidando de quem importa.
           </p>
 
           <div className="heroButtons">
-            <a 
-              href="https://sites.google.com/view/chatbotvivamaisseguros/in%C3%ADcio" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="primaryBtn"
-              style={{ display: 'inline-block', textDecoration: 'none', textAlign: 'center' }}
-            >
-              Fale com nosso Bot
-            </a>
+            <button className="primaryBtn">Fazer Simulação</button>
+            <button className="secondaryBtn">Conhecer Serviços</button>
           </div>
         </div>
       </section>
@@ -64,9 +97,7 @@ export default function Home() {
       <section className="about" id="about">
 
         <div className="aboutText">
-          <span className="sectionTag">
-            SOBRE NÓS
-          </span>
+          <span className="sectionTag">SOBRE NÓS</span>
 
           <h2>Quem Somos</h2>
 
@@ -87,15 +118,28 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="aboutImg">
-          <Image
-            src="/logo.png"
-            alt="Logo Viva Mais"
-            width={320}
-            height={320}
-          />
-        </div>
+
       </section>
+
+      {/* ESTATÍSTICAS DA EMPRESA */}
+      <div className="statsHome">
+
+        <div className="statHomeCard">
+          <h3>25k+</h3>
+          <p>Clientes ao longo da história</p>
+        </div>
+
+        <div className="statHomeCard">
+          <h3>80%</h3>
+          <p>Taxa de satisfação</p>
+        </div>
+
+        <div className="statHomeCard">
+          <h3>28</h3>
+          <p>Anos no mercado</p>
+        </div>
+
+      </div>
 
       {/* SIMULAÇÃO */}
       <section className="simulation" id="simulation">
@@ -105,16 +149,13 @@ export default function Home() {
             width="100%"
             height="100%"
             src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Vídeo Simulação"
+            title="Vídeo Simulação Viva Mais"
             allowFullScreen
           ></iframe>
         </div>
 
         <div className="simText">
-
-          <span className="sectionTag">
-            SIMULAÇÃO
-          </span>
+          <span className="sectionTag">SIMULAÇÃO</span>
 
           <h2>Veja Como Funciona</h2>
 
@@ -123,17 +164,15 @@ export default function Home() {
             e conheça as vantagens de ter a Viva Mais ao seu lado.
           </p>
 
-          <button className="primaryBtn">
-            Simular agora
-          </button>
+          <button className="primaryBtn">Simular agora</button>
         </div>
+
       </section>
 
+      {/* SERVIÇOS */}
       <section className="services" id="services">
 
-        <span className="sectionTag">
-          SERVIÇOS
-        </span>
+        <span className="sectionTag">SERVIÇOS</span>
 
         <h2>Conheça nossos seguros</h2>
 
@@ -141,33 +180,27 @@ export default function Home() {
 
           <Link href="/ParaVoce" className="card">
             <h3>Para Você</h3>
-            <p>
-              Seguro de Vida, Seguro de Viagem e Plano de Saúde.
-            </p>
+            <p>Seguro de Vida, Seguro de Viagem e Plano de Saúde.</p>
           </Link>
 
           <Link href="/ParaCasa" className="card">
             <h3>Para sua Casa</h3>
-
-            <p>
-              Seguro Residencial, Proteção Familiar e Seguro X.
-            </p>
+            <p>Seguro Residencial, Proteção Familiar e Assistência 24h.</p>
           </Link>
 
           <Link href="/ParaEmpresa" className="card">
             <h3>Para Empresas</h3>
-            <p>
-              Seguro Saúde Empresarial, Seguro Garantia e Seguro de Frota.
-            </p>
+            <p>Saúde Empresarial, Seguro Garantia e Seguro de Frota.</p>
           </Link>
 
         </div>
+
       </section>
+
+      {/* CONTATO */}
       <section className="contact" id="contact">
 
-        <span className="sectionTag">
-          CONTATO
-        </span>
+        <span className="sectionTag">CONTATO</span>
 
         <h2>Fale conosco</h2>
 
@@ -190,13 +223,12 @@ export default function Home() {
           </div>
 
         </div>
+
       </section>
 
       {/* FOOTER */}
       <footer className="footer">
-        <p>
-          © 2026 Viva Mais Seguros — Todos os direitos reservados.
-        </p>
+        <p>© 2026 Viva Mais Seguros — Todos os direitos reservados.</p>
       </footer>
 
     </main>
