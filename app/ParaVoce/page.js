@@ -49,15 +49,14 @@ export default function ParaVoce() {
       <section className="servicesSection">
 
         <div className="sectionTitle">
-          <span>NOSSAS SOLUÇÕES</span>
           <h2>Seguros para Você</h2>
         </div>
 
         <div className="servicesGrid">
 
           <div className="serviceCard">
-            <h3>Seguro de Vida</h3>
-            <p>Garanta estabilidade financeira e proteção para quem você ama.</p>
+            <h3>Seguro Automotivo</h3>
+            <p>Proteção completa para o seu veículo com assistência 24h em todo o Brasil.</p>
           </div>
 
           <div className="serviceCard">
@@ -78,8 +77,6 @@ export default function ParaVoce() {
       <section className="benefitsSection">
 
         <div className="benefitsText">
-          <span className="tag">DIFERENCIAIS</span>
-
           <h2>Atendimento humanizado e soluções inteligentes</h2>
 
           <p>
@@ -124,7 +121,14 @@ export default function ParaVoce() {
         <div className="ctaBox">
           <h2>Proteja o que realmente importa</h2>
           <p>Fale com nossa equipe e encontre o seguro ideal para você.</p>
-          <button>Entrar em Contato</button>
+          <a
+            href="https://wa.me/5581984885266"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{textDecoration: 'none'}}
+          >
+            <button>Entrar em Contato</button>
+          </a>
         </div>
 
       </section>

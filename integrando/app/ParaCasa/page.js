@@ -66,8 +66,6 @@ export default function ParaCasa() {
 
         <div className="sectionTitle">
 
-          <span>NOSSAS SOLUÇÕES</span>
-
           <h2>
             Seguros Residenciais
           </h2>
@@ -77,54 +75,24 @@ export default function ParaCasa() {
         <div className="servicesGrid">
 
           <div className="serviceCard">
-
-            <Image
-              src="/casa.png"
-              alt="Seguro residencial"
-              width={80}
-              height={80}
-            />
-
             <h3>Seguro Residencial</h3>
-
             <p>
               Cobertura completa contra incêndios, roubos e danos elétricos.
             </p>
-
           </div>
 
           <div className="serviceCard">
-
-            <Image
-              src="/familia.png"
-              alt="Proteção familiar"
-              width={80}
-              height={80}
-            />
-
             <h3>Proteção Familiar</h3>
-
             <p>
               Segurança para sua família com assistência e suporte contínuo.
             </p>
-
           </div>
 
           <div className="serviceCard">
-
-            <Image
-              src="/assistencia.png"
-              alt="Assistência residencial"
-              width={80}
-              height={80}
-            />
-
-            <h3>A Definir</h3>
-
+            <h3>Seguro de Eletrônicos</h3>
             <p>
-              (Alterar) Atendimento rápido para emergências residenciais a qualquer hora.
+              Cobertura para televisores, computadores e outros equipamentos contra danos e roubo.
             </p>
-
           </div>
 
         </div>
@@ -136,10 +104,6 @@ export default function ParaCasa() {
       <section className="benefitsSection">
 
         <div className="benefitsText">
-
-          <span className="tag">
-            DIFERENCIAIS
-          </span>
 
           <h2>
             Seu patrimônio protegido
@@ -160,16 +124,6 @@ export default function ParaCasa() {
 
         </div>
 
-        <div className="benefitsImage">
-
-          <Image
-            src="/familia-casa.jpg"
-            alt="Família feliz em casa"
-            width={550}
-            height={550}
-          />
-
-        </div>
 
       </section>
 
@@ -215,9 +169,14 @@ export default function ParaCasa() {
             para encontrar o seguro ideal para sua casa.
           </p>
 
-          <button>
-            Falar com Especialista
-          </button>
+          <a
+            href="https://wa.me/5581984885266"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{textDecoration: 'none'}}
+          >
+            <button>Falar com Especialista</button>
+          </a>
 
         </div>
 

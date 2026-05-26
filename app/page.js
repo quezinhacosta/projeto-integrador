@@ -180,12 +180,12 @@ export default function Home() {
 
           <Link href="/ParaVoce" className="card">
             <h3>Para Você</h3>
-            <p>Seguro de Vida, Seguro de Viagem e Plano de Saúde.</p>
+            <p>Seguro Automotivo, Seguro de Viagem e Plano de Saúde.</p>
           </Link>
 
           <Link href="/ParaCasa" className="card">
             <h3>Para sua Casa</h3>
-            <p>Seguro Residencial, Proteção Familiar e Assistência 24h.</p>
+            <p>Seguro Residencial, Proteção Familiar e Seguro de Eletrônicos.</p>
           </Link>
 
           <Link href="/ParaEmpresa" className="card">

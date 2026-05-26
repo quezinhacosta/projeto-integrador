@@ -124,7 +124,7 @@ export default function Home() {
           <Link href="/ParaVoce" className="card">
             <h3>Para Você</h3>
             <p>
-              Seguro de Vida, Seguro de Viagem e Plano de Saúde.
+              Seguro Automotivo, Seguro de Viagem e Plano de Saúde.
             </p>
           </Link>
 
@@ -132,7 +132,7 @@ export default function Home() {
             <h3>Para sua Casa</h3>
 
             <p>
-              Seguro Residencial, Proteção Familiar e Seguro X.
+              Seguro Residencial, Proteção Familiar e Seguro de Eletrônicos.
             </p>
           </Link>
 
@@ -178,6 +178,9 @@ export default function Home() {
       <footer className="footer">
         <p>
           © 2026 Viva Mais Seguros — Todos os direitos reservados.
+        </p>
+        <p className="aiNotice">
+          As imagens utilizadas neste site foram geradas por inteligência artificial.
         </p>
       </footer>
 

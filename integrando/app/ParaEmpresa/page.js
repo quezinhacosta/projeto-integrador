@@ -62,8 +62,6 @@ export default function ParaEmpresa() {
 
         <div className="sectionTitle">
 
-          <span>NOSSAS SOLUÇÕES</span>
-
           <h2>
             Seguros Empresariais
           </h2>
@@ -73,13 +71,6 @@ export default function ParaEmpresa() {
         <div className="servicesGrid">
 
           <div className="serviceCard">
-
-            <Image
-              src="/empresa.png"
-              alt="Seguro empresarial"
-              width={80}
-              height={80}
-            />
 
             <h3>Seguro Saúde Empresarial</h3>
 
@@ -91,13 +82,6 @@ export default function ParaEmpresa() {
 
           <div className="serviceCard">
 
-            <Image
-              src="/funcionarios.png"
-              alt="Benefícios corporativos"
-              width={80}
-              height={80}
-            />
-
             <h3>Seguro Garantia</h3>
 
             <p>
@@ -107,13 +91,6 @@ export default function ParaEmpresa() {
           </div>
 
           <div className="serviceCard">
-
-            <Image
-              src="/cyber.png"
-              alt="Segurança digital"
-              width={80}
-              height={80}
-            />
 
             <h3>Seguro de Frota</h3>
 
@@ -131,22 +108,7 @@ export default function ParaEmpresa() {
 
       <section className="benefitsSection">
 
-        <div className="benefitsImage">
-
-          <Image
-            src="/empresa-reuniao.jpg"
-            alt="Equipe empresarial"
-            width={550}
-            height={550}
-          />
-
-        </div>
-
         <div className="benefitsText">
-
-          <span className="tag">
-            POR QUE ESCOLHER A VIVA MAIS
-          </span>
 
           <h2>
             Soluções estratégicas para empresas de todos os portes

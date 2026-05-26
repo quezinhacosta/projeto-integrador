@@ -49,7 +49,6 @@ export default function ParaCasa() {
       <section className="servicesSection">
 
         <div className="sectionTitle">
-          <span>NOSSAS SOLUÇÕES</span>
           <h2>Seguros Residenciais</h2>
         </div>
 
@@ -66,8 +65,8 @@ export default function ParaCasa() {
           </div>
 
           <div className="serviceCard">
-            <h3>Assistência 24h</h3>
-            <p>Atendimento rápido para emergências residenciais a qualquer hora do dia.</p>
+            <h3>Seguro de Eletrônicos</h3>
+            <p>Cobertura para televisores, computadores e outros equipamentos contra danos e roubo.</p>
           </div>
 
         </div>
@@ -78,8 +77,6 @@ export default function ParaCasa() {
       <section className="benefitsSection">
 
         <div className="benefitsText">
-          <span className="tag">DIFERENCIAIS</span>
-
           <h2>Seu patrimônio protegido com máxima confiança</h2>
 
           <p>
@@ -127,7 +124,14 @@ export default function ParaCasa() {
             Solicite agora uma consultoria personalizada
             para encontrar o seguro ideal para sua casa.
           </p>
-          <button>Falar com Especialista</button>
+          <a
+            href="https://wa.me/5581984885266"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{textDecoration: 'none'}}
+          >
+            <button>Falar com Especialista</button>
+          </a>
         </div>
 
       </section>

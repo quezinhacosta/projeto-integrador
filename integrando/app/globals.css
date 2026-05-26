@@ -377,6 +377,13 @@ section p {
   color: #bdbdbd;
 }
 
+.aiNotice {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.35);
+  font-style: italic;
+}
+
 /* RESPONSIVO */
 @media (max-width: 1100px) {
   .about {

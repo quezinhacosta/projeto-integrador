@@ -49,7 +49,6 @@ export default function ParaEmpresa() {
       <section className="servicesSection">
 
         <div className="sectionTitle">
-          <span>NOSSAS SOLUÇÕES</span>
           <h2>Seguros Empresariais</h2>
         </div>
 
@@ -78,8 +77,6 @@ export default function ParaEmpresa() {
       <section className="benefitsSection">
 
         <div className="benefitsText">
-          <span className="tag">POR QUE ESCOLHER A VIVA MAIS</span>
-
           <h2>Soluções estratégicas para empresas de todos os portes</h2>
 
           <p>
@@ -127,7 +124,14 @@ export default function ParaEmpresa() {
             Descubra soluções empresariais modernas e eficientes
             para sua empresa crescer com tranquilidade.
           </p>
-          <button>Falar com Especialista</button>
+          <a
+            href="https://wa.me/5581984885266"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{textDecoration: 'none'}}
+          >
+            <button>Falar com Especialista</button>
+          </a>
         </div>
 
       </section>

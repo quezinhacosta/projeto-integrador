@@ -61,64 +61,30 @@ export default function ParaVoce() {
       <section className="servicesSection">
 
         <div className="sectionTitle">
-          <span>NOSSAS SOLUÇÕES</span>
           <h2>Seguros para Você</h2>
         </div>
 
         <div className="servicesGrid">
 
           <div className="serviceCard">
-
-            <Image
-              src="/vida.png"
-              alt="Seguro de vida"
-              width={80}
-              height={80}
-            />
-
-            <h3>Seguro de Vida</h3>
-
+            <h3>Seguro Automotivo</h3>
             <p>
-              Garanta estabilidade financeira e proteção
-              para quem você ama.
+              Proteção completa para o seu veículo com assistência 24h em todo o Brasil.
             </p>
-
           </div>
 
           <div className="serviceCard">
-
-            <Image
-              src="/saude.png"
-              alt="Plano de saúde"
-              width={80}
-              height={80}
-            />
-
             <h3>Seguro de Viagem</h3>
-
             <p>
-             Viaje com tranquilidade e assistência em qualquer lugar.
+              Viaje com tranquilidade e assistência em qualquer lugar.
             </p>
-
           </div>
 
           <div className="serviceCard">
-
-            <Image
-              src="/viagem.png"
-              alt="Seguro viagem"
-              width={80}
-              height={80}
-            />
-
             <h3>Plano de Saúde</h3>
-            Atendimento médico de qualidade com cobertura
-              completa para seu bem-estar.
-
             <p>
-              
+              Atendimento médico de qualidade com cobertura completa para seu bem-estar.
             </p>
-
           </div>
 
         </div>
@@ -130,10 +96,6 @@ export default function ParaVoce() {
       <section className="benefitsSection">
 
         <div className="benefitsText">
-
-          <span className="tag">
-            DIFERENCIAIS
-          </span>
 
           <h2>
             Atendimento humanizado e soluções inteligentes
@@ -153,17 +115,6 @@ export default function ParaVoce() {
 
         </div>
 
-        <div className="benefitsImage">
-
-          <Image
-            src="/cliente-feliz.jpg"
-            alt="Cliente feliz"
-            width={500}
-            height={500}
-          />
-
-        </div>
-
       </section>
 
       {/* CTA */}
@@ -180,9 +131,14 @@ export default function ParaVoce() {
             Fale com nossa equipe e encontre o seguro ideal para você.
           </p>
 
-          <button>
-            Entrar em Contato
-          </button>
+          <a
+            href="https://wa.me/5581984885266"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{textDecoration: 'none'}}
+          >
+            <button>Falar com Especialista</button>
+          </a>
 
         </div>
 
