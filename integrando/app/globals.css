@@ -201,41 +201,93 @@ section p {
   box-shadow: 0 0 40px rgba(57, 255, 136, 0.1);
 }
 
-/* CHATBOT */
-.chatbot-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
+/* CHATBOT VISUAL CONTAINER */
 .chatbot-visual {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
 
+/* LINK DA IMAGEM */
+.chatbot-link {
+  position: relative;
+  display: inline-block;
+  border-radius: 24px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+/* IMAGEM DO BOT */
 .chatbot-img-float {
-  border-radius: 20px;
-  transition: 0.3s;
+  border-radius: 24px;
+  object-fit: cover;
+
+  transition: 0.4s ease;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
-.chatbot-img-float:hover {
-  transform: translateY(-10px);
-  cursor: pointer;
+/* HOVER DA IMAGEM */
+.chatbot-link:hover .chatbot-img-float {
+  transform: scale(1.05) translateY(-8px);
+  filter: brightness(1.1);
 }
 
+/* BADGE "CLIQUE PARA FALAR" */
 .click-badge {
   position: absolute;
-  bottom: 20px;
-  background: #39ff88;
+  bottom: 18px;
+  left: 18px;
+
+  background: linear-gradient(135deg, #39ff88, #148f52);
   color: black;
+
   padding: 8px 14px;
-  border-radius: 20px;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
   font-weight: bold;
+
+  box-shadow: 0 5px 20px rgba(57, 255, 136, 0.3);
+
+  z-index: 5;
 }
+
+/* EFEITO DE GLOW NO HOVER */
+.chatbot-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at center,
+    rgba(57, 255, 136, 0.15),
+    transparent 70%
+  );
+
+  opacity: 0;
+  transition: 0.4s;
+  z-index: 2;
+}
+
+.chatbot-link:hover::before {
+  opacity: 1;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .chatbot-visual {
+    margin-top: 40px;
+  }
+
+  .chatbot-img-float {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 /* SERVICES */
 .services {

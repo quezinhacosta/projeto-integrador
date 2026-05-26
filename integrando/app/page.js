@@ -67,7 +67,7 @@ export default function Home() {
               className="chatbot-link"
             >
               <Image
-                src="/imagem2.png" // <-- Nome da imagem que você salvar na pasta public
+                src="/chatbot.png" // <-- Nome da imagem que você salvar na pasta public
                 alt="Robô Chatbot Viva Mais"
                 width={600}
                 height={500}
