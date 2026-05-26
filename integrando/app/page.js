@@ -15,7 +15,7 @@ export default function Home() {
         <nav className="nav">
           <a href="#home">Home</a>
           <a href="#about">Quem Somos</a>
-          <a href="#simulation">Simulação</a>
+          <a href="#chatbot">Chatbot</a>
           <a href="#services">Serviços</a>
           <a href="#contact">Contato</a>
         </nav>
@@ -26,7 +26,7 @@ export default function Home() {
       {/* HERO */}
       <section className="hero" id="home">
         <Image
-          src="/banner.jpg"
+          src="/Gemini_Generated_Image_t6ip7xt6ip7xt6ip.png"
           alt="Banner viva mais"
           fill
           priority
@@ -45,18 +45,38 @@ export default function Home() {
             Soluções completas em seguros com atendimento humanizado,
             rápido e confiável.
           </p>
+        </div>
+      </section>
+{/* SEÇÃO CHATBOT */}
+<section className="chatbot-section" id="chatbot">
+  <div className="chatbot-container">
+    
+    <div className="chatbot-content">
+      <span className="sectionTag">ATENDIMENTO IA</span>
+      <h2>Fale com o nosso Especialista Digital</h2>
+      <p>
+        Dúvidas sobre coberturas ou assistência? Nosso robô está pronto para 
+        te ajudar agora mesmo. Clique na imagem abaixo para iniciar.
+      </p>
+    </div>
 
-          <div className="heroButtons">
-            <a 
-              href="https://vivamaisseguros.my.canva.site/dahkm4siix4" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="primaryBtn"
-              style={{ display: 'inline-block', textDecoration: 'none', textAlign: 'center' }}
+    <div className="chatbot-visual">
+            <Link 
+              href="https://canva.link/0f5h3uuhe5m8vz4"
+              target="_blank"
+              className="chatbot-link"
             >
-              Fale com nosso Bot
-            </a>
+              <Image
+                src="/imagem2.png" // <-- Nome da imagem que você salvar na pasta public
+                alt="Robô Chatbot Viva Mais"
+                width={600}
+                height={500}
+                className="chatbot-img-float"
+              />
+              <div className="click-badge">Clique para falar!</div>
+            </Link>
           </div>
+
         </div>
       </section>
 
@@ -87,47 +107,9 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="aboutImg">
-          <Image
-            src="/logo.png"
-            alt="Logo Viva Mais"
-            width={320}
-            height={320}
-          />
-        </div>
-      </section>
+      </section> 
 
-      {/* SIMULAÇÃO */}
-      <section className="simulation" id="simulation">
 
-        <div className="videoContainer">
-          <iframe
-            width="100%"
-            height="100%"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Vídeo Simulação"
-            allowFullScreen
-          ></iframe>
-        </div>
-
-        <div className="simText">
-
-          <span className="sectionTag">
-            SIMULAÇÃO
-          </span>
-
-          <h2>Veja Como Funciona</h2>
-
-          <p>
-            Descubra como funciona o processo de contratação
-            e conheça as vantagens de ter a Viva Mais ao seu lado.
-          </p>
-
-          <button className="primaryBtn">
-            Simular agora
-          </button>
-        </div>
-      </section>
 
       <section className="services" id="services">
 

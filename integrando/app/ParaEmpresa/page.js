@@ -52,10 +52,6 @@ export default function ParaEmpresa() {
             completas para proteger o crescimento do seu negócio.
           </p>
 
-          <button className="heroButton">
-            Solicitar Consultoria
-          </button>
-
         </div>
 
       </section>
@@ -191,13 +187,6 @@ export default function ParaEmpresa() {
 
         </div>
 
-        <div className="statsCard">
-
-          <h3>24h</h3>
-          <p>Suporte Especializado</p>
-
-        </div>
-
       </section>
 
       {/* CTA */}
@@ -214,10 +203,6 @@ export default function ParaEmpresa() {
             Descubra soluções empresariais modernas e eficientes
             para sua empresa crescer com tranquilidade.
           </p>
-
-          <button>
-            Falar com Especialista
-          </button>
 
         </div>
 
